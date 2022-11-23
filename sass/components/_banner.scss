@@ -3,8 +3,8 @@
     banner {
             background-color: var(--banner);
             padding: 200px 0;
-            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/portfolio-1.jpg);
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/portfolio-1.jpg);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/banner-x2.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-x2.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -29,6 +29,7 @@
         }
     
         .banner__button {
+    
             border: 0;
             border-radius: 0;
             font-family: "Roboto", sans-serif;
