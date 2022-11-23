@@ -1,0 +1,183 @@
+// 480px
+@media screen and(min-width:480px) {
+    .soc__item {
+            width: 450px;
+            height: 226px;
+        }
+    
+        .banner {
+            background-color: var(--banner);
+            padding: 200px 0;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../img/hero-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            max-width: 1600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .banner__title {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--white-color);
+            width: 696px;
+            margin: 0 auto;
+        }
+    
+        .banner__button {
+            border: 0;
+            border-radius: 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: var(--white-color);
+            background: var(--accent-color);
+            cursor: pointer;
+            margin-top: 30px;
+            padding: 10px 32px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .hero-item {
+            flex-basis: 270px;
+        }
+    
+        .soc__list {
+            width: 450px;
+            height: 120px;
+        }
+    
+        .soc__icon-box {
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background: var(--background-our-team);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+        .soc__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--secondary-text-color);
+            margin-bottom: 10px;
+            width: 270px;
+            height: 16px;
+        }
+    
+        .soc__text {
+            line-height: 1.71;
+            color: var(--primary-text-color);
+        }
+    
+        .hero {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+// 768px
+@media screen and(min-width:768px) {
+    .hero-item {
+            flex-basis: 270px;
+        }
+    
+        .soc__list {
+            display: flex;
+            width: 738px;
+            height: 480px;
+        }
+        .soc__item{
+            flex-basis: calc(100% - 30px) / 2;
+
+        }
+        .soc__icon-box {
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background: var(--background-our-team);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+        .soc__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--secondary-text-color);
+            margin-bottom: 10px;
+        }
+    
+        .soc__text {
+            line-height: 1.71;
+            color: var(--primary-text-color);
+        }
+    
+        .hero {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+// 1200px
+@media screen and(min-width:1200px){
+    .hero-item {
+            flex-basis: 270px;
+        }
+    
+        .soc__list {
+            display: flex;
+            gap: 30px;
+        }
+    
+        .soc__icon-box {
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background: var(--background-our-team);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+        .soc__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--secondary-text-color);
+            margin-bottom: 10px;
+        }
+    
+        .soc__text {
+            line-height: 1.71;
+            color: var(--primary-text-color);
+        }
+    
+        .hero {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
