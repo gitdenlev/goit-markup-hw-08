@@ -1,62 +1,64 @@
 .team {
-   background-color: $section-comand;
-}
-
-.team__list {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-
-   margin-left: auto;
-   margin-right: auto;
-   padding: 0;
-}
-
-.team__item {
-   border-radius: 0px 0px 4px 4px;
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-   0px 2px 1px rgba(0, 0, 0, 0.2);
-   
-   font-size: 16px;
-   line-height: 1.18;
-   text-align: center;
-
-   background-color: $main-white-color;
-
-   @media (min-width: 768px) {
-      width: calc((100% - 30px) / 2);
-   }
-
-   @media (min-width: 1200px) {
-      width: calc((100% - 90px) / 4);
-   }
-}
-
-.team__container {
-   padding-top: 30px;
-   padding-bottom: 24px;
-}
-
-.team__thumb {
-   display: block;
-   max-width: 100%;
-   height: auto;
-   margin: 0;
+  background-color: $section-color;
 }
 
 .team__title {
-   margin-bottom: 10px;
-
-   font-weight: $fw-500;
-   font-size: $fs-16;
-   line-height: 1.19;
-   letter-spacing: 0.03em;
-   text-align: center;
-
-   color: $title-text-color;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(28 / 33);
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
 }
 
-.team__text {
-   margin-top: 10px;
-   margin-bottom: 16px;
+.team-members__name {
+  color: $title-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.team-members {
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-gap;
+  }
+}
+
+.team-members__item {
+  background-color: $white-color;
+  box-shadow: $team-member-shadow;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.team-members__description {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.team-members__thumb {
+  padding: 30px 0;
 }

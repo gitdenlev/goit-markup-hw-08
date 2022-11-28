@@ -1,29 +1,21 @@
 .logo {
-   display: block;
+  font-family: $secondary-font;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $black-color;
+}
 
-   font-family: $secondary-font;
-   font-weight: $fw-bold;
-   font-size: 24px;
-   line-height: 1.16;
-   text-decoration: none;
-   color: $title-text-color;
+.logo__accent {
+  color: $brand-color;
+}
 
-   @media (min-width: 1200px) {
-      font-size: 24px;
-      line-height: 1.2;
-   }
+.header__logo {
+  margin-right: 93px;
+}
 
-   &--accent {
-      color: $acent-color;
-   }
-
-   .header__container & {
-      padding-top: 16px;
-      padding-bottom: 16px;
-
-      @media (min-width: 768px) {
-         padding-top: 24px;
-         padding-bottom: 24px;
-      }
-   }
+.logo__accent--footer {
+  color: $white-color;
 }

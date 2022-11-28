@@ -1,0 +1,138 @@
+.footer {
+  background-color: $background-color;
+  padding: 60px 0;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  margin-top: 20px;
+  color: $address-color;
+  line-height: 1.71;
+  transition: color 250ms $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link--map {
+  color: $white-color;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.socials__join {
+  color: $white-color;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footer__container {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__nav {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
+}
+
+.footer__thumb {
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.subscribe {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+.subscribe__thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.subscribe__label {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.subscribe__input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: $white-color;
+  transition: border-color 250ms $transition-cubic;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+  &:focus {
+    border-color: $brand-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
